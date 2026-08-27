@@ -24,13 +24,15 @@ function App() {
   };
 
   return (
+
     <div style={{
       minHeight: '100vh',
-      backgroundColor: '#eaf4ff',
+      backgroundColor: '#001f3f',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'flex-start',
-      paddingTop: '50px',
+      paddingTop: '120px',
+      boxSizing: 'border-box', 
       fontFamily: 'Segoe UI, sans-serif'
     }}>
       <div style={{
@@ -51,7 +53,7 @@ function App() {
           fontSize: '24px',
           fontWeight: '700'
         }}>
-          📝 My To-Do List
+          📝 My To-Do List App
         </h2>
 
         <form onSubmit={addTodo} style={{ display: 'flex', gap: '8px', marginBottom: '20px' }}>
@@ -132,7 +134,9 @@ function App() {
           ))}
         </ul>
 
-        {/* Bottom Professional Credit */}
+        {
+          
+        }
         <p style={{
           margin: '20px 0 0 0',
           paddingTop: '12px',
@@ -144,7 +148,7 @@ function App() {
           fontWeight: '600',
           textTransform: 'uppercase'
         }}>
-          
+
         </p>
 
       </div>
