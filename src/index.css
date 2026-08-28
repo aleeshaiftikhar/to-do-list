@@ -1,115 +1,18 @@
 :root {
-  --text: #a89f91;
-  --text-h: #f3e9dc;
-  --bg: #1a1412; 
-  --border: #2e2420;
-  --code-bg: #2b201c;
-  --accent: #866747;
-  --accent-bg: rgba(134, 103, 71, 0.15);
-  --accent-border: rgba(134, 103, 71, 0.5);
-  --social-bg: rgba(243, 233, 220, 0.1);
-
-  --shadow:
-    rgba(0, 0, 0, 0.35) 0 10px 20px -3px,
-    rgba(0, 0, 0, 0.2) 0 4px 6px -2px;
-
   --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --mono: ui-monospace, Consolas, monospace;
-
-  font: 18px/145% var(--sans);
-  letter-spacing: 0.18px;
-  color: var(--text);
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
-
 
 body {
   margin: 0;
-  background-color: var(--bg) !important;
+  padding: 0;
+  background-color: #001f3f !important;
+  font-family: var(--sans);
+  -webkit-font-smoothing: antialiased;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text: #a89f91;
-    --text-h: #f3e9dc;
-    --bg: #1a1412;
-    --border: #2e2420;
-    --code-bg: #2b201c;
-  }
-
-  #social .button-icon {
-    filter: invert(1) brightness(2);
-  }
-}
-
 
 #root {
   width: 100%;
-  max-width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  background-color: var(--bg) !important;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-}
-
-@media (max-width: 1024px) {
-  :root {
-    font-size: 16px;
-  }
-}
-
-h1,
-h2 {
-  font-family: var(--heading);
-  font-weight: 500;
-  color: var(--text-h);
-}
-
-h1 {
-  font-size: 56px;
-  letter-spacing: -1.68px;
-  margin: 32px 0;
-}
-
-@media (max-width: 1024px) {
-  h1 {
-    font-size: 36px;
-    margin: 20px 0;
-  }
-  h2 {
-    font-size: 20px;
-  }
-}
-
-h2 {
-  font-size: 24px;
-  line-height: 118%;
-  letter-spacing: -0.24px;
-  margin: 0 0 8px;
-}
-
-p {
-  margin: 0;
-}
-
-code,
-.counter {
-  font-family: var(--mono);
-  display: inline-flex;
-  border-radius: 4px;
-  color: var(--text-h);
-}
-
-code {
-  font-size: 15px;
-  line-height: 135%;
-  padding: 4px 8px;
-  background: var(--code-bg);
+  margin: 0 auto;
+  background-color: #001f3f !important;
 }
